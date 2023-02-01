@@ -1,0 +1,56 @@
+<idea-plugin>
+    <id>com.plugin.chatgpt</id>
+    <name>NexChatGPT</name>
+    <version>1.1.1</version>
+    <vendor>jiangsir、SummerOfSaturday、YeeXu</vendor>
+
+    <description>
+        <![CDATA[
+      <h1>English</h1>
+      <p>ChatGPT is a language model trained by OpenAI and can be used for a variety of tasks, including dialogue and text generation. ChatGPT is a neural network-based model that is trained on large amounts of human language data and is able to generate natural language text that is meaningful in a given context. The model can be used for many applications, such as natural language processing (NLP) and dialogue systems.</p>
+      <h2>Features</h2>
+      <ol>
+            <li>No need to login. You can use this even if you don't have a OpenAI account.</li>
+            <li>Based on SSE(Server send event) technology, you can receive answer quickly.</li>
+            <li>Easy to use. Type your question in the search input, then click send button or press Enter, you can receive answer immediately.</li>
+      </ol>
+      <p>Tips: <a href="https://chat.5yoo.com/">ChatGPT h5 group chat version</a></p>
+
+      <h1>简体中文</h1>
+      <p>ChatGPT是一种语言模型，它由OpenAI训练， 可以用于多种任务，包括对话和文本生成。ChatGPT 是一种基于神经网络的模型，它使用 人类语言的大量样本进行训练，可以在给定上下文的情 况下生成有意义的自然语言文本。 该模型可以用于许多应用，例如自然语言处理（NLP）和 对话系统。</p>
+      <h2>特性</h2>
+      <ol>
+            <li><Strong>无需登录。</strong>即使你没有OpenAI账号也可以使用</li>
+            <li>基于SSE(Server send event)技术，你可以很快的收到回答</li>
+            <li>易于使用。在搜索框输入你的问题，然后点击send按钮或回车键,你可以很快接收到答案。</li>
+      </ol>
+      <p>提示: <a href="https://chat.5yoo.com/">ChatGPT h5群聊版本</a></p>
+    ]]>
+    </description>
+
+    <change-notes>
+        <![CDATA[
+    <br>version 1.1.1 (2023.2.1)
+        <br>-fix bugs
+    <br>
+    <br>version 1.1.0 (2023.1.6)
+        <br>-Display results like a typewriter（增加返回结果打字机效果）
+    <br>
+    <br>version 1.0.0 (2022.12.12)
+        <br>-First release and Update compatible version(2019.1.4 and later)
+    ]]>
+    </change-notes>
+
+    <idea-version since-build="191"/>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="ChatGPT" factoryClass="com.plugin.chatgpt.ui.ChatGptWindowFactory" anchor="right"></toolWindow>
+    </extensions>
+
+    <actions>
+
+    </actions>
+
+</idea-plugin>
